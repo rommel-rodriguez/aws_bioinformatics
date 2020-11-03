@@ -1,0 +1,43 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Sid1",
+            "Effect": "Allow",
+            "Action": [
+                "iam:*",
+                "sns:*",
+                "cloudformation:*",
+                "ec2:*",
+                "sqs:*",
+                "xray:*",
+                "s3:*",
+                "elasticloadbalancing:*",
+                "autoscaling:*",
+                "lambda:*",
+                "tag:GetResources",
+                "application-autoscaling:*",
+                "logs:*",
+                "ecs:*",
+                "ecr:*",
+                "pricing:*",
+                "elasticache:*",
+                "batch:*",
+                "kms:ListKeyPolicies",
+                "kms:GenerateRandom",
+                "kms:ListRetirableGrants",
+                "kms:GetKeyPolicy",
+                "kms:ListResourceTags",
+                "kms:ReEncryptFrom",
+                "kms:ListGrants",
+                "kms:GetParametersForImport",
+                "kms:ListKeys",
+                "kms:GetKeyRotationStatus",
+                "kms:ListAliases",
+                "kms:ReEncryptTo",
+                "kms:DescribeKey"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
