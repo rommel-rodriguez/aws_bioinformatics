@@ -2,7 +2,6 @@
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "Sid1",
             "Effect": "Allow",
             "Action": [
                 "iam:*",
@@ -37,6 +36,11 @@
                 "kms:ReEncryptTo",
                 "kms:DescribeKey"
             ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Deny",
+            "Action": "iam:CreateUser",
             "Resource": "*"
         }
     ]
